@@ -1,6 +1,6 @@
 {
 	"name": "@yai-team/echo",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"author": {
 		"name": "YAI team",
 		"email": "help.yai.team@gmail.com"
@@ -10,7 +10,7 @@
 		"prebuild": "rimraf dist",
 		"build": "tsc --project tsconfig.build.json && bun run bundle",
 		"bundle": "esbuild dist/index.js --bundle --minify --platform=node --format=cjs --outfile=dist/index.cjs.js && esbuild dist/index.js --bundle --minify --platform=node --format=esm --outfile=dist/index.esm.js",
-		"test:unit": "jest"
+		"test:unit": "jest --coverage"
 	},
 	"main": "dist/index.cjs.js",
 	"module": "dist/index.esm.js",

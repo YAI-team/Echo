@@ -1,5 +1,5 @@
-import { EchoClient, EchoClientInstance } from './client'
-import { Echo, EchoInstance } from './echo'
+import { EchoClient, type EchoClientInstance } from './client'
+import { Echo, type EchoInstance } from './echo'
 
 export * from './error'
 export * from './types'

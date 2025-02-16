@@ -1,17 +1,17 @@
 {
 	"compilerOptions": {
 		"target": "ESNext",
-		"skipLibCheck": true,
-		"strict": true,
-		"esModuleInterop": true,
-		"forceConsistentCasingInFileNames": true,
 		"module": "ESNext",
 		"moduleResolution": "node",
+		"baseUrl": "./",
+		"strict": true,
+		"noEmit": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
 		"resolveJsonModule": true,
-		"declaration": true,
-		"outDir": "./dist",
-		"baseUrl": "./"
+		"isolatedModules": true
 	},
 	"include": ["**/*.ts"],
-	"exclude": ["node_modules", "dist", "public"]
+	"exclude": ["node_modules", "dist"]
 }
